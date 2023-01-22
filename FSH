@@ -1,0 +1,111 @@
+
+
+/bin - binaries, executables of my system, is not restrict for users in the system
+ls, cat
+basic functions
+
+
+
+/sbin - system binaries
+only access for the administrator
+when you have problem with the OS and need to access recovery mode
+
+
+
+/boot
+everythin your OS need to boot
+
+
+
+/dev - devices lives
+hard disk, keyboards, webcam, so on
+sda
+
+
+
+/etc
+used to store most of the configuration files in Linux
+everytime you install something in the OS it will create a folder in this directory
+system-wide application
+not a user setting like Libre Office.
+
+/home
+system users
+personal files
+
+/lib/ /lib32/ lib64 
+stores the libraries
+libraries are files that apps can use to perform various functions,
+they are required by binaries in bin
+they are shared libraries to be imported into your programs
+
+
+
+/media /mnt(mount)
+other mounted disk, like usb stick, network drive, external harddrive
+if you want to mount manually use mnt otherwise live /media to OS to manage
+if you plug an usb stick everyday the system will already know the drive and it will be installed in /media
+if it is a new usb stick, or you connect once in 6 months it will be installed in /mnt (it is a temporary
+mountfo the system)
+
+
+
+/opt
+where manually installed software from vendors resides.
+softwares you create or downloaded
+softwares has all libraries and executable
+example: chrome
+
+
+/proc
+you find sudo files
+info about system process and resources
+here you find info about the cpu (cat /proc/cpuinfo)
+
+
+/root
+for root users
+root users home folder
+
+
+
+/run new folder
+runs in a RAM memory
+
+
+/snap
+snap packages are stored, mainly used by ubuntu
+
+
+
+/srv
+service directory
+if you are running a server (web server, ftp, etc)
+files that will be accessed by external users
+
+
+
+/sys - similiar to /proc
+it is a way to interact with the kernel
+works like /run, anything is installed there
+
+
+
+/tmp
+temporary file
+keep saved file in case the app crash
+
+
+/usr
+user applications space
+share between users 
+in older system, it was used for user home directories 
+
+
+/var - variable dir
+
+directories expected to grow in size. system writes data (logs and cached data)
+
+/var/logs - logs from app, OS
+/var/spool - it is like a queue
+/var/crash - system had crashed
