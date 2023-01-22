@@ -1,0 +1,15 @@
+
+Turn on the pc
+If there is a failure during POST (power-on self-test) it wont boot up
+Initialize the BIOS (BIOS has the initialize order, info of all hardware, ...)
+BIOS loads and run the boot code from the first sector of hardware (/bios)
+The bootloader, known Grub2, loads/call the kernel into the memory
+Kernel is executing. After loaded it will split in 2 parts (two-stages boot)
+Two-stages boot, first part is the initrd (initial ram disk). The / it will be mounted.
+Two-stages boot, second part init (/sbin/init) sets up the user space and the
+processes needed for the user environment. The init functions calls the systemd daemon.
+The systemd is responsible for bringing the linux host to a usable state.
+Systemd is responsible for mounting file systems, starting and managing system services. 
+systemd is common but we have the systemV (used in RHEL6, CenyOS6 distros)
+
+
