@@ -1,0 +1,3 @@
+
+dpkg -l 
+list all the programms insalled in my system
