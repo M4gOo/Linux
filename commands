@@ -1,3 +1,6 @@
 
 dpkg -l 
 list all the programms insalled in my system
+
+df -a 
+all the partitions of the system
