@@ -4,3 +4,6 @@ list all the programms insalled in my system
 
 df -a 
 all the partitions of the system
+
+cat /etc/os-release
+Linux flavor and version
