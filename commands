@@ -7,3 +7,8 @@ all the partitions of the system
 
 cat /etc/os-release
 Linux flavor and version
+
+
+passwd  (you will change your password)
+sudo passwd <username>   (you will change someone else password)
+Change password for users
